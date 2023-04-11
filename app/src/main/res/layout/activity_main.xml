@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#060607"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+           >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bu_7"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/bu_8"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/bu_9"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/bu_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange"
+                    android:onClick="setOperator"
+                    android:text="+"
+                    android:textColor="#F3EDED"
+                    tools:ignore="TextContrastCheck" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bu_4"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/bu_5"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/bu_6"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/bu_mo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange"
+                    android:onClick="setOperator"
+                    android:text="-"
+                    android:textColor="#F3EDED"
+                    tools:ignore="TextContrastCheck" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bu_1"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/bu_2"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/bu_3"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:onClick="ajouterChifre"
+                    android:backgroundTint="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/bu_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/orange"
+                    android:onClick="setOperator"
+                    android:text="/"
+                    android:textColor="#F3EDED"
+                    tools:ignore="TextContrastCheck" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bu_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/orange"
+                    android:onClick="ajouterChifre"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bu_foi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:background="@color/orange"
+                    android:onClick="setOperator"
+                    android:text="*"
+                    android:textColor="#F3EDED"
+                    tools:ignore="TextContrastCheck" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bu_ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/orange"
+                    android:onClick="rest"
+                    android:text="AC" />
+
+                <Button
+                    android:id="@+id/bu_eq"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/orange"
+                    android:onClick="Calculer"
+                    android:text="=" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
